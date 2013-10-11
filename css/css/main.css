@@ -1,0 +1,59 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-family: ;
+  font-size: 26px;
+}
+h2 {
+  font-family: ;
+  font-size: 26px;
+}
+h3 {
+  font-family: ;
+  font-size: 26px;
+}
+a:hover {
+  color: #d44072;
+}
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  /*  background: @homebackgroundimage;
+*/
+}
+header {
+  display: inline;
+  float: left;
+  width: 940px;
+  margin: 0 10px;
+}
+article#maincolumn {
+  display: inline;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+  background-color: "red";
+}
+sidebar#sidebar {
+  display: inline;
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+}
