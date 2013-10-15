@@ -1,4 +1,6 @@
 body {
+/**/
+  background: url(../../assets/astro.logo.png) no-repeat;
   font-family: 'Roboto', sans-serif;
 }
 p {

@@ -1,23 +1,68 @@
 @import 'styles/brand.less';
 @import 'styles/typography.less';
 @import 'styles/grid.less';
+@import 'styles/mixins.less';
+
+*{
+	.box-sizing();
+}
 
 .container {
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
-/*  background: @homebackgroundimage;
-*/}
+}
 
-header {
+header {	
   .column(12);
+  height:50px; 
+  background-color:@headercolor;
+  .border-radius(); 
+  .box-shadow(); 
 }
 
-article#maincolumn {
-  .column(8);
-  background-color: "red";
+article#maincolumn {	
+	height: 700px;
+  #homebackgroundimage{
+  	.column(12);
+  }
+  #lyric{
+  	.column(6);
+  	margin: -150px 0 0 10px;
+  }
+  #aboutpageimage{
+  	  .column(6);
+  	  margin:17px 0 0px 240px;
+	}
+	p{
+	  .column(6);
+	  padding:10px 0 0 0;
+	}
 }
 
-sidebar#sidebar {
-  .column(4);
+article#tourpagemaincolumn{
+	height: 700px;
+	.column(8);
+	img{
+		.column(4);
+		bottom: 0;
+		position: absolute;
+		margin: 0 0 -132px 0;
+		.opacity(); 
+	}
+}
+
+section#sidebar{
+	height: 700px;
+	.column(4);
+	background-color: @basefontcolor;
+	.border-left(); 
+}
+
+footer{
+  .column(12);
+  height:50px;
+  background-color:@headercolor;
+  bottom: 0;
+ .border-radius();  
 }
